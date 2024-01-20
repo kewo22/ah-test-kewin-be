@@ -98,6 +98,6 @@ class StudentController extends Controller
         $student = Student::find($id);
         $student->delete();
 
-        return response()->json(null, 204);
+        return response()->json($id, 200);
     }
 }
